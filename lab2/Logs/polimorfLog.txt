@@ -1,0 +1,3 @@
+11:48:40.95 - [ ERROR ] - Poli Error.
+11:48:40.95 - [ WARNING ] - Poli warning ads.
+11:48:40.95 - [ INFO ] - a1237891389
