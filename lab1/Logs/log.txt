@@ -1,0 +1,3 @@
+16:32:41.250 - [ ERROR ] - Total crash.
+16:32:41.250 - [ INFO ] - DB collected.
+16:32:41.250 - [ WARNING ] - User's password is wrong
