@@ -1,3 +1,0 @@
-19:54:35.450 - [ ERROR ] - Total crash.
-19:54:35.450 - [ INFO ] - DB collected.
-19:54:35.450 - [ WARNING ] - User's password is wrong
