@@ -1,0 +1,3 @@
+[ << ] - Log using overloaded bitwise shift operator
+[ << ] - LogF 2
+[ << ] - LogF 3
