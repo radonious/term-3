@@ -1,0 +1,4 @@
+576567576576576
+ng overloaded bitwise shift operator
+[ << ] - LogF 2
+[ << ] - LogF 3
