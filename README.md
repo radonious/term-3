@@ -1,2 +1,3 @@
-# term-3
-repository of my term 3 lab's
+# Repo of my 3rd term labs.
+
+Time/Date and Logger classes progression
