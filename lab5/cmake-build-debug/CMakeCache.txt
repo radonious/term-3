@@ -24,8 +24,11 @@ CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDef
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
 
+//Enable colored diagnostics throughout.
+CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
+
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+CMAKE_CXX_COMPILER:STRING=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -43,7 +46,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+CMAKE_C_COMPILER:STRING=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -80,6 +83,9 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
+
+//Value Computed by CMake.
+CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/Users/radon/CLionProjects/Working/lab5/cmake-build-debug/CMakeFiles/pkgRedirects
 
 //Path to a program.
 CMAKE_INSTALL_NAME_TOOL:FILEPATH=/usr/bin/install_name_tool
@@ -227,7 +233,7 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/Users/radon/CLionProjects/Working/lab5/cmake-build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=23
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=24
 //Patch version of cmake used to create the current loaded cache
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
 //Path to CMake executable.
@@ -318,7 +324,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23
+CMAKE_ROOT:INTERNAL=/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG

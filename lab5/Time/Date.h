@@ -53,7 +53,7 @@ public:
         struct timeval utime{};
         gettimeofday(&utime, nullptr);
         this->date.msecond = utime.tv_usec / MSEC_PER_SEC;
-        cout << "Constructor w/o arguments called" << endl;
+        //cout << "Constructor w/o arguments called" << endl;
     }
     // Constructor w/ parametrs
     Date(int year, int month, int day, int hour, int minute, int second, int msecond) {
@@ -64,20 +64,20 @@ public:
         if (minute >= 0 && minute < 60) {this->date.minute = minute;} else {this->date.minute = minute % 60;}
         if (second >= 0 && second < 60) {this->date.second = second;} else {this->date.second = second % 60;}
         if (msecond >= 0 && msecond < 1000) {this->date.msecond = msecond;} else {this->date.msecond = msecond % 1000;}
-        cout << "Constructor w/ arguments #1 called" << endl;
+        //cout << "Constructor w/ arguments #1 called" << endl;
     }
     Date(DT date) {
         this->date = date;
-        cout << "Constructor w/ arguments #2 called" << endl;
+        //cout << "Constructor w/ arguments #2 called" << endl;
     }
     // Coping constructor
     Date(Date const &old) {
         this->date = old.date;
-        cout << "Constructor for copying called" << endl;
+        //cout << "Constructor for copying called" << endl;
     }
     // Destructor
     ~Date() {
-        cout << "Destructor called" << endl;
+        //cout << "Destructor called" << endl;
     }
     // Getters
     int getDateYear() { return date.year; }

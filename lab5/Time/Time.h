@@ -30,11 +30,13 @@ class Time { // private по умолчанию
 public:
     // Defualt constructor
     Time() {
+        time_t now = std::time(0);
+        tm *ltm = localtime(&now);
+        this->time.hour = ltm->tm_hour;
+        this->time.minute = ltm->tm_min;
+        this->time.second =  ltm->tm_sec;
         struct timeval utime{};
         gettimeofday(&utime, nullptr);
-        this->time.hour = (utime.tv_sec % SEC_PER_DAY) / SEC_PER_HOUR + 7; // +7 UTC NSK
-        this->time.minute = (utime.tv_sec % SEC_PER_DAY % SEC_PER_HOUR) / SEC_PER_MIN;
-        this->time.second = utime.tv_sec % SEC_PER_DAY % SEC_PER_HOUR % SEC_PER_MIN;
         this->time.msecond = utime.tv_usec / MSEC_PER_SEC;
         cout << "Constructor w/o arguments called" << endl;
     }
@@ -44,20 +46,20 @@ public:
         if (minute >= 0 && minute < 60) {this->time.minute = minute % 60;} else {this->time.minute = minute % 60;}
         if (second >= 0 && second < 60) {this->time.second = second % 60;} else {this->time.second = second % 60;}
         if (msecond >= 0 && msecond < 1000) {this->time.msecond = msecond % 1000;} else {this->time.msecond = msecond % 1000;}
-        cout << "Constructor w/ arguments #1 called" << endl;
+        //cout << "Constructor w/ arguments #1 called" << endl;
     }
     Time(T time) {
         this->time = time;
-        cout << "Constructor w/ arguments #2 called" << endl;
+        //cout << "Constructor w/ arguments #2 called" << endl;
     }
     // Coping constructor
     Time(Time const &old) {
         this->time = old.time;
-        cout << "Constructor for copying called" << endl;
+        //cout << "Constructor for copying called" << endl;
     }
     // Destructor
     ~Time() {
-        cout << "Destructor called" << endl;
+        //cout << "Destructor called" << endl;
     }
     // Getters
     int getTimeHour() { return time.hour; }

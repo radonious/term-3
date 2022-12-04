@@ -4,15 +4,15 @@ class LoggerConsole : public Logger {
 public:
 // Constructors
     LoggerConsole() {
-        cout << "Constructor w/o arguments called" << endl;
+        //cout << "Constructor w/o arguments called" << endl;
     }
     LoggerConsole(LoggerConsole const &old) {
         this->arr = old.arr;
-        cout << "Constructor for copying called" << endl;
+        //cout << "Constructor for copying called" << endl;
     }
     // Destructor
     ~LoggerConsole() {
-        cout << "Destructor called" << endl;
+        //cout << "Destructor called" << endl;
     }
     // Methods
     char* getLogName() {

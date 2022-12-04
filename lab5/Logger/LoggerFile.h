@@ -10,7 +10,7 @@ public:
             file.close();
             cout << "File not opened" << endl;
         }
-        cout << "Constructor w/o arguments called" << endl;
+        //cout << "Constructor w/o arguments called" << endl;
     }
     LoggerFile(char* logname) {
         this->logname = logname;
@@ -19,7 +19,7 @@ public:
             file.close();
             cout << "File not opened" << endl;
         }
-        cout << "Constructor w/ arguments called" << endl;
+        //cout << "Constructor w/ arguments called" << endl;
     }
     LoggerFile(LoggerFile const &old) {
         this->logname = old.logname;
@@ -28,14 +28,14 @@ public:
             file.close();
             cout << "File not opened" << endl;
         }
-        cout << "Constructor for copying called" << endl;
+        //cout << "Constructor for copying called" << endl;
     }
     // Destructor
     ~LoggerFile() {
         if (file.is_open()) {
             file.close();
         }
-        cout << "Destructor called" << endl;
+        //cout << "Destructor called" << endl;
     }
     // Getters
     char* getLogName() { return logname; }

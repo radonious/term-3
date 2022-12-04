@@ -18,3 +18,4 @@ using namespace std;
 #include "Logger/Logger.h"
 #include "Logger/LoggerConsole.h"
 #include "Logger/LoggerFile.h"
+#include "Logger/LoggerTemplate.h"
