@@ -9,4 +9,4 @@
 6) Added support of **ConsoleLogger** and **FileLogger** template classes creation (idea: Control object modifications through logger)
 7) Creation of Builder and Iterator patterns for **Data/Time** and **Logger** classes respectively. Also bringing the code base to the principles of SOLID.
 
-(с) radon
+#### (с) radon
